@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Web Calculator</title>
+</head>
+<body>
+    <h1>TK's Amazing Web Calculator</h1>
+    <form> 
+        <div>
+            <input id="numOne" type="number" name="numOne"/>
+            <select id="operator" onchange>
+                <option value=""></option>
+                <option value="add"> + </option>
+                <option value="subtract"> - </option>
+                <option value="divide"> ÷ </option>
+                <option value="multiply"> x </option>
+            </select>
+            <input id="numTwo" type="number" name="numTwo"/>
+            <button
+                type="button"
+                onclick="defineValues()">
+                =
+            </button>
+            <p id="finalAns" style="display:inline-block"></p>
+        </div>
+        <button
+                type="button"
+                onclick="clearForm()">
+                clear
+        </button>
+    </form>
+</body>
+<script src=script.js></script>
+</html>
